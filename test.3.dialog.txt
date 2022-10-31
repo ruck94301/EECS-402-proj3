@@ -1,0 +1,176 @@
+out> Enter string for PPM image file name to load: 
+in> deer.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 1
+out> 1. Specify upper left and lower right corners of rectangle
+out> 2. Specify upper left corner and dimensions of rectangle
+out> 3. Specify extent from center of rectangle
+out> Enter int for rectangle specification method: 
+in> 3
+out> Enter rectangle center row and column: 
+in> 132 327
+out> Enter int for half number of rows: 
+in> 12
+out> Enter int for half number of columns: 
+in> 12
+out> 1. Red
+out> 2. Green
+out> 3. Blue
+out> 4. Black
+out> 5. White
+out> Enter int for rectangle color: 
+in> 1
+out> 1. No
+out> 2. Yes
+out> Enter int for rectangle fill option: 
+in> 1
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 4
+out> Enter string for PPM file name to output: 
+in> new1.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 1
+out> 1. Specify upper left and lower right corners of rectangle
+out> 2. Specify upper left corner and dimensions of rectangle
+out> 3. Specify extent from center of rectangle
+out> Enter int for rectangle specification method: 
+in> 1
+out> Enter upper left corner row and column: 
+in> 300 312
+out> Enter lower right corner row and column: 
+in> 364 337
+out> 1. Red
+out> 2. Green
+out> 3. Blue
+out> 4. Black
+out> 5. White
+out> Enter int for rectangle color: 
+in> 3
+out> 1. No
+out> 2. Yes
+out> Enter int for rectangle fill option: 
+in> 1
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 4
+out> Enter string for PPM file name to output: 
+in> new2.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 3
+out> Enter string for file name of PPM image to insert: 
+in> topHat.ppm
+out> Enter upper left corner to insert image row and column: 
+in> 35 280
+out> 1. Red
+out> 2. Green
+out> 3. Blue
+out> 4. Black
+out> 5. White
+out> Enter int for transparecy color: 
+in> 5
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 4
+out> Enter string for PPM file name to output: 
+in> new3.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 2
+out> Enter string for file name containing pattern: 
+in> ohdeerPattern.txt
+out> Enter upper left corner of pattern row and column: 
+in> 140 375
+out> 1. Red
+out> 2. Green
+out> 3. Blue
+out> 4. Black
+out> 5. White
+out> Enter int for pattern color: 
+in> 5
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 4
+out> Enter string for PPM file name to output: 
+in> new4.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 1
+out> 1. Specify upper left and lower right corners of rectangle
+out> 2. Specify upper left corner and dimensions of rectangle
+out> 3. Specify extent from center of rectangle
+out> Enter int for rectangle specification method: 
+in> 2
+out> Enter upper left corner row and column: 
+in> 375 200
+out> Enter int for number of rows: 
+in> 50
+out> Enter int for number of columns: 
+in> 200
+out> 1. Red
+out> 2. Green
+out> 3. Blue
+out> 4. Black
+out> 5. White
+out> Enter int for rectangle color: 
+in> 5
+out> 1. No
+out> 2. Yes
+out> Enter int for rectangle fill option: 
+in> 2
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 4
+out> Enter string for PPM file name to output: 
+in> new5.ppm
+out> 1. Annotate image with rectangle
+out> 2. Annotate image with pattern from file
+out> 3. Insert another image
+out> 4. Write out current image
+out> 5. Exit the program
+out> Enter int for main menu choice: 
+in> 5
+out> Thank you for using this program

@@ -1,0 +1,136 @@
+Enter string for PPM image file name to load: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 
+Enter rectangle center row and column: 
+Enter int for half number of rows: 
+Enter int for half number of columns: 
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 
+1. No
+2. Yes
+Enter int for rectangle fill option: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for PPM file name to output: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 
+Enter upper left corner row and column: 
+Enter lower right corner row and column: 
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 
+1. No
+2. Yes
+Enter int for rectangle fill option: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for PPM file name to output: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for file name of PPM image to insert: 
+Enter upper left corner to insert image row and column: 
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for transparecy color: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for PPM file name to output: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for file name containing pattern: 
+Enter upper left corner of pattern row and column: 
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for pattern color: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for PPM file name to output: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 
+Enter upper left corner row and column: 
+Enter int for number of rows: 
+Enter int for number of columns: 
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 
+1. No
+2. Yes
+Enter int for rectangle fill option: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Enter string for PPM file name to output: 
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice: 
+Thank you for using this program
