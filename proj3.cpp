@@ -15,7 +15,7 @@ int main()
   int choice;
 
   // initial prompt
-  cout << "Enter string for PPM image file name to load: " << endl;
+  cout << "Enter string for PPM image file name to load: ";
   cin >> ppm_filename;
   cout << "DEBUG ppm_filename: " << ppm_filename << endl;
 
@@ -25,11 +25,22 @@ int main()
 
     switch (choice)
     {
+      case 1:
+        break;
+      case 2:
+        break;
+      case 3:
+        break;
+      case 4:
+        break;
       case 5:
         cout << "Thank you for using this program" << endl;
         return 0;
+      case 0:
+        break;
       default:
-        cout << "bad choice" << endl;
+        cout << "ERROR impossible" << endl;
+        return 1;
     }
   }
 
@@ -45,19 +56,26 @@ int main_menu()
   cout << "3. Insert another image" << endl;
   cout << "4. Write out current image" << endl;
   cout << "5. Exit the program" << endl;
-  cout << "Enter int for main menu choice: " << endl;
+  cout << "Enter int for main menu choice: ";
 
   cin >> choice;
 
   // see [1]
   if (cin.fail()) {
-    cout << "DEBUG cin.fail()" << endl;
+    cout << "ERROR expected an integer" << endl;
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    return 0;
   }
 
-  cout << "DEBUG choice: " << choice << endl;
+  if (!(choice >= 1 && choice <= 5))
+  {
+    cout << "ERROR expected an integer in [1,5]" << endl;
+    return 0;
+  }
 
+  // choice is an integer in [1,5]
+  cout << "DEBUG choice: " << choice << endl;
   return choice;
 }
 
