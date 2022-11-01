@@ -1,4 +1,4 @@
-.PHONY: test
+.PHONY: test pre-submit
 
 all: proj3.exe
 
