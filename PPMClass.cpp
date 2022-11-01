@@ -9,7 +9,7 @@ using namespace std;
 // {
 // }
 
-void PPMClass::load(string filename)
+void PPMClass::loadImg(string filename)
 {
   ifstream inFile;
 
@@ -19,7 +19,7 @@ void PPMClass::load(string filename)
   inFile.close();
 }
 
-void PPMClass::save(string filename)
+void PPMClass::saveImg(string filename)
 {
   ofstream outFile;
 

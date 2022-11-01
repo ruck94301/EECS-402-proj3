@@ -6,8 +6,8 @@
 class PPMClass
 {
   public:
-    void load(std::string filename);
-    void save(std::string filename);
+    void loadImg(std::string filename);
+    void saveImg(std::string filename);
 };
 
 #endif

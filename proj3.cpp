@@ -36,7 +36,7 @@ int main()
   cout << "DEBUG ppm_filename: " << ppm_filename << endl;
 
   // load from ppm_filename, or error
-  image.load(ppm_filename);
+  image.loadImg(ppm_filename);
 
   done = false;
   while (!done)
@@ -171,7 +171,7 @@ int main()
 
         cout << "DEBUG output_filename: " << output_filename << endl;
 
-        image.save(output_filename);
+        image.saveImg(output_filename);
 
         break;
 
