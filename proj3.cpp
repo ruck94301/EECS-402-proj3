@@ -21,6 +21,7 @@ int main()
 {
   string ppm_filename;
   string output_filename;
+  bool done;
   int choice;
   int rectangle_specification_method;
   int rectangle_color;
@@ -37,81 +38,67 @@ int main()
   // load from ppm_filename, or error
   image.load(ppm_filename);
 
-  while (true)
+  done = false;
+  while (!done)
   {
     choice = main_menu();
 
     switch (choice)
     {
       case 1:  // 1. Annotate image with rectangle
-        while (true)
-        {
-          rectangle_specification_method = menu_rectangle_specification_method();
+        rectangle_specification_method = menu_rectangle_specification_method();
 
-          switch(rectangle_specification_method)
-          {
-            case 1:
+        switch(rectangle_specification_method)
+        {
+          case 1:
 // Enter upper left corner row and column: 300 312
 // Enter lower right corner row and column: 364 337
-              break;
-            case 2:
+            break;
+          case 2:
 // Enter upper left corner row and column: 375 200
 // Enter int for number of rows: 50
 // Enter int for number of columns: 200
-              break;
-            case 3:
+            break;
+          case 3:
 // Enter rectangle center row and column: 132 327
 // Enter int for half number of rows: 12
 // Enter int for half number of columns: 12
-              break;
-            case 0:
-              break;
-            default:
-              cout << "ERROR impossible" << endl;
-              return 1;
-          }
+            break;
+          default:
+            cout << "ERROR impossible" << endl;
+            return 1;
         }
 
-        while (true)
-        {
-          rectangle_color = menu_rectangle_color();
+        rectangle_color = menu_rectangle_color();
 
-          switch(rectangle_color)
-          {
-            case 1:
-              break;
-            case 2:
-              break;
-            case 3:
-              break;
-            case 4:
-              break;
-            case 5:
-              break;
-            case 0:
-              break;
-            default:
-              cout << "ERROR impossible" << endl;
-              return 1;
-          }
+        switch(rectangle_color)
+        {
+          case 1:
+            break;
+          case 2:
+            break;
+          case 3:
+            break;
+          case 4:
+            break;
+          case 5:
+            break;
+          default:
+            cout << "ERROR impossible" << endl;
+            return 1;
         }
 
-        while (true)
-        {
-          rectangle_fill_option = menu_rectangle_fill_option();
+        rectangle_fill_option = menu_rectangle_fill_option();
 
-          switch(rectangle_fill_option)
-          {
-            case 1:
-              break;
-            case 2:
-              break;
-            case 0:
-              break;
-            default:
-              cout << "ERROR impossible" << endl;
-              return 1;
-          }
+        switch(rectangle_fill_option)
+        {
+          case 1:
+            break;
+          case 2:
+            break;
+          default:
+            cout << "ERROR impossible" << endl;
+            return 1;
         }
 
         // do something with image, rectangle, color, & fill option
@@ -123,28 +110,25 @@ int main()
 // Enter string for file name containing pattern: ohdeerPattern.txt
 // Enter upper left corner of pattern row and column: 140 375
 
-        while (true)
-        {
-          pattern_color = menu_pattern_color();
+        pattern_color = menu_pattern_color();
 
-          switch(pattern_color)
-          {
-            case 1:
-              break;
-            case 2:
-              break;
-            case 3:
-              break;
-            case 4:
-              break;
-            case 5:
-              break;
-            case 0:
-              break;
-            default:
-              cout << "ERROR impossible" << endl;
-              return 1;
-          }
+        switch(pattern_color)
+        {
+          case 1:
+            break;
+          case 2:
+            break;
+          case 3:
+            break;
+          case 4:
+            break;
+          case 5:
+            break;
+          case 0:
+            break;
+          default:
+            cout << "ERROR impossible" << endl;
+            return 1;
         }
 
         // Do something with image, overlay_pattern, location, & transparency_color
@@ -155,49 +139,49 @@ int main()
 // Enter string for file name of PPM image to insert: topHat.ppm
 // Enter upper left corner to insert image row and column: 35 280
 
-        while (true)
-        {
-          transparency_color = menu_transparency_color();
+        transparency_color = menu_transparency_color();
 
-          switch(transparency_color)
-          {
-            case 1:
-              break;
-            case 2:
-              break;
-            case 3:
-              break;
-            case 4:
-              break;
-            case 5:
-              break;
-            case 0:
-              break;
-            default:
-              cout << "ERROR impossible" << endl;
-              return 1;
-          }
+        switch(transparency_color)
+        {
+          case 1:
+            break;
+          case 2:
+            break;
+          case 3:
+            break;
+          case 4:
+            break;
+          case 5:
+            break;
+          case 0:
+            break;
+          default:
+            cout << "ERROR impossible" << endl;
+            return 1;
         }
 
         // Do something with image, overlay_image, location, & transparency_color
         cout << "DEBUG Do something with image, overlay_image, location, & transparency_color " << endl;
 
         break;
+
       case 4:  // 4. Write out current image
         cout << "Enter string for PPM file name to output: " << endl;
         cin >> output_filename;
 
         cout << "DEBUG output_filename: " << output_filename << endl;
 
-        // save to output_filename, or error
         image.save(output_filename);
 
         break;
+
       case 5:  // 5. Exit the program
         cout << "Thank you for using this program" << endl;
-        return 0;
+        done = true;
+
       case 0:
         break;
+
       default:
         cout << "ERROR impossible" << endl;
         return 1;

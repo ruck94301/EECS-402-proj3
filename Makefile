@@ -1,3 +1,5 @@
+.PHONY: test
+
 all: proj3.exe
 
 proj3.exe: ColorClass.o PPMClass.o LocationClass.o proj3.o
@@ -17,7 +19,7 @@ test:
 	./proj3.exe < test.1.in.txt | tee test.1.out.txt
 	./proj3.exe < test.2.in.txt | tee test.2.out.txt
 	
-	for N in 1 2 3 4 5; do rm new$$N.ppm; done 
+	for N in 1 2 3 4 5; do rm -f new$$N.ppm; done 
 	./proj3.exe < test.3.in.txt | tee test.3.out.txt
 	diff test/test.3.out.txt test.3.out.txt
 	for N in 1 2 3 4 5; do (set -x; cmp test/new$$N.ppm new$$N.ppm); done
