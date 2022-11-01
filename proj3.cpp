@@ -20,6 +20,7 @@ int main()
 {
   string ppm_filename;
   string output_filename;
+  string pattern_filename;
   string prompt;
   bool done;
   int choice;
@@ -30,6 +31,9 @@ int main()
   ColorClass pattern_color;
   PPMClass image, image2;
   int row, column;
+  int row2, column2; 
+  int number_of_rows, number_of_columns;
+  int rows_halved, columns_halved;
 
   // initial prompt
   cout << "Enter string for PPM image file name to load: ";
@@ -52,18 +56,26 @@ int main()
         switch(rectangle_specification_method)
         {
           case 1:
-// Enter upper left corner row and column: 300 312
-// Enter lower right corner row and column: 364 337
+            cout << "Enter upper left corner row and column: ";
+            cin >> row >> column;
+            cout << "// Enter lower right corner row and column: ";
+            cin >> row2 >> column2;
             break;
           case 2:
-// Enter upper left corner row and column: 375 200
-// Enter int for number of rows: 50
-// Enter int for number of columns: 200
+            cout << "// Enter upper left corner row and column: ";
+            cin >> row >> column;
+            cout << "// Enter int for number of rows: ";
+            cin >> number_of_rows;
+            cout << "// Enter int for number of columns: ";
+            cin >> number_of_columns;
             break;
           case 3:
-// Enter rectangle center row and column: 132 327
-// Enter int for half number of rows: 12
-// Enter int for half number of columns: 12
+            cout << "// Enter rectangle center row and column: ";
+            cin >> row >> column;
+            cout << "// Enter int for half number of rows: ";
+            cin >> rows_halved;
+            cout << "// Enter int for half number of columns: ";
+            cin >> columns_halved;
             break;
           default:
             cout << "ERROR impossible" << endl;
@@ -86,20 +98,27 @@ int main()
             return 1;
         }
 
-        // do something with image, rectangle, color, & fill option
-        cout << "DEBUG Do something with image, rectangle, color & fill option" << endl;
+        cout << "DEBUG Annotate image with rectangle..." << endl;
+        // ...
 
         break;
 		
       case 2:  // 2. Annotate image with pattern from file
-// Enter string for file name containing pattern: ohdeerPattern.txt
-// Enter upper left corner of pattern row and column: 140 375
+        cout << "Enter string for file name containing pattern: ";
+        cin >> pattern_filename;
+// ohdeerPattern.txt
+
+        cout << "Enter upper left corner of pattern row and column: ";
+        cin >> row >> column;
+        cout << "DEBUG row: " << row << endl;
+        cout << "DEBUG column: " << column << endl;
 
         prompt = "Enter int for pattern color: ";
         pattern_color = menu_color(prompt);
 
-        // Do something with image, overlay_pattern, location, & transparency_color
-        cout << "DEBUG Do something with image, overlay_pattern, location, & transparency_color " << endl;
+        cout << "DEBUG Annotate image with pattern from file..." << endl;
+        // ...
+
         break;
 		
       case 3:  // 3. Insert another image
@@ -109,7 +128,6 @@ int main()
 
         cout << "Enter upper left corner to insert image row and column: ";
         cin >> row >> column;
-
         cout << "DEBUG row: " << row << endl;
         cout << "DEBUG column: " << column << endl;
 
@@ -124,7 +142,6 @@ int main()
       case 4:  // 4. Write out current image
         cout << "Enter string for PPM file name to output: " << endl;
         cin >> output_filename;
-
         // cout << "DEBUG output_filename: " << output_filename << endl;
 
         image.saveImg(output_filename);
