@@ -1,4 +1,4 @@
-.PHONY: test pre-submit
+.PHONY: test stylecheck pre-submit
 
 all: proj3.exe
 
@@ -33,6 +33,9 @@ gdb:
 # https://valgrind.org/docs/manual/quick-start.html
 valgrind:
 	valgrind --leak-check=yes --track-origins=yes proj3.exe
+
+stylecheck:
+	./stylecheck.sh *.h *.cpp
 
 pre-submit:
 	sh pre-submit.sh

@@ -33,7 +33,7 @@ int main()
   PPMClass image, image2;
   PatternClass pattern;
   int row, column;
-  int row2, column2; 
+  int row2, column2;
   int number_of_rows, number_of_columns;
   int rows_halved, columns_halved;
 
@@ -55,7 +55,7 @@ int main()
       case 1:  // 1. Annotate image with rectangle
         rectangle_specification_method = menu_rectangle_specification_method();
 
-        switch(rectangle_specification_method)
+        switch (rectangle_specification_method)
         {
           case 1:
             cout << "Enter upper left corner row and column: ";
@@ -89,7 +89,7 @@ int main()
 
         rectangle_fill_option = menu_rectangle_fill_option();
 
-        switch(rectangle_fill_option)
+        switch (rectangle_fill_option)
         {
           case 1:
             break;
@@ -104,11 +104,11 @@ int main()
         // ...
 
         break;
-		
+
       case 2:  // 2. Annotate image with pattern from file
         cout << "Enter string for file name containing pattern: ";
         cin >> pattern_filename;
-	pattern.loadPattern(pattern_filename);
+        pattern.loadPattern(pattern_filename);
 
         cout << "Enter upper left corner of pattern row and column: ";
         cin >> row >> column;
@@ -122,7 +122,7 @@ int main()
         // ...
 
         break;
-		
+
       case 3:  // 3. Insert another image
         cout << "Enter string for file name of PPM image to insert: ";
         cin >> ppm_filename;
@@ -177,15 +177,15 @@ int main_menu()
     cout << "4. Write out current image" << endl;
     cout << "5. Exit the program" << endl;
     cout << "Enter int for main menu choice: ";
-  
+
     cin >> choice;
-  
+
     if (cin.fail()) {
       cout << "ERROR expected an integer" << endl;
       cin.clear();
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
-  
+
     if (choice >= 1 && choice <= 5)
     {
       done = true;
@@ -213,7 +213,7 @@ int menu_rectangle_specification_method()
 
   cin >> choice;
 
-  if (cin.fail()) 
+  if (cin.fail())
   {
     cout << "ERROR expected an integer" << endl;
     cin.clear();
@@ -238,7 +238,7 @@ ColorClass menu_color(string prompt)
   bool done;
   int choice;
 
-  do 
+  do
   {
     cout << "1. Red" << endl;
     cout << "2. Green" << endl;
@@ -254,7 +254,7 @@ ColorClass menu_color(string prompt)
       cin.clear();
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
-  
+
     if (choice >= 1 && choice <= 5)
     {
       done = true;
