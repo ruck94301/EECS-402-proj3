@@ -1,19 +1,17 @@
 all: proj3.exe
 
-proj3.exe: Color.o ColorImage.o Location.o PPMImage.o proj3.o
+proj3.exe: ColorClass.o PPMClass.o LocationClass.o proj3.o
 	# link object files to produce executable
-	g++ Color.o ColorImage.o Location.o PPMImage.o proj3.o -o proj3.exe
+	g++ ColorClass.o PPMClass.o LocationClass.o proj3.o -o proj3.exe
 
-proj3.o: proj3.cpp constants.h
+proj3.o: proj3.cpp constants.h PPMClass.h
 	g++ -g -std=c++98 -Wall -c proj3.cpp -o proj3.o
-Color.o: Color.cpp Color.h constants.h
-	g++ -g -std=c++98 -Wall -c Color.cpp -o Color.o
-ColorImage.o: ColorImage.cpp ColorImage.h constants.h
-	g++ -g -std=c++98 -Wall -c ColorImage.cpp -o ColorImage.o
-Location.o: Location.cpp Location.h constants.h
-	g++ -g -std=c++98 -Wall -c Location.cpp -o Location.o
-PPMImage.o: PPMImage.cpp PPMImage.h constants.h
-	g++ -g -std=c++98 -Wall -c PPMImage.cpp -o PPMImage.o
+ColorClass.o: ColorClass.cpp ColorClass.h constants.h
+	g++ -g -std=c++98 -Wall -c ColorClass.cpp -o ColorClass.o
+PPMClass.o: PPMClass.cpp PPMClass.h constants.h
+	g++ -g -std=c++98 -Wall -c PPMClass.cpp -o PPMClass.o
+LocationClass.o: LocationClass.cpp LocationClass.h constants.h
+	g++ -g -std=c++98 -Wall -c LocationClass.cpp -o LocationClass.o
 
 test:
 	./proj3.exe < test.1.in.txt | tee test.1.out.txt
