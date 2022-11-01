@@ -3,6 +3,7 @@
 #include <string>
 
 #include "ColorClass.h"
+#include "PatternClass.h"
 #include "PPMClass.h"
 
 // [1] https://stackoverflow.com/questions/72315735/
@@ -30,6 +31,7 @@ int main()
   ColorClass transparency_color;
   ColorClass pattern_color;
   PPMClass image, image2;
+  PatternClass pattern;
   int row, column;
   int row2, column2; 
   int number_of_rows, number_of_columns;
@@ -106,7 +108,7 @@ int main()
       case 2:  // 2. Annotate image with pattern from file
         cout << "Enter string for file name containing pattern: ";
         cin >> pattern_filename;
-// ohdeerPattern.txt
+	pattern.loadPattern(pattern_filename);
 
         cout << "Enter upper left corner of pattern row and column: ";
         cin >> row >> column;

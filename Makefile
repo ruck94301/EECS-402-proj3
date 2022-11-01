@@ -2,16 +2,18 @@
 
 all: proj3.exe
 
-proj3.exe: ColorClass.o PPMClass.o LocationClass.o proj3.o
+proj3.exe: ColorClass.o PPMClass.o PatternClass.o LocationClass.o proj3.o
 	# link object files to produce executable
-	g++ ColorClass.o PPMClass.o LocationClass.o proj3.o -o proj3.exe
+	g++ ColorClass.o PPMClass.o PatternClass.o LocationClass.o proj3.o -o proj3.exe
 
-proj3.o: proj3.cpp constants.h PPMClass.h
+proj3.o: proj3.cpp constants.h PPMClass.h PatternClass.h
 	g++ -g -std=c++98 -Wall -c proj3.cpp -o proj3.o
 ColorClass.o: ColorClass.cpp ColorClass.h constants.h
 	g++ -g -std=c++98 -Wall -c ColorClass.cpp -o ColorClass.o
 PPMClass.o: PPMClass.cpp PPMClass.h constants.h
 	g++ -g -std=c++98 -Wall -c PPMClass.cpp -o PPMClass.o
+PatternClass.o: PatternClass.cpp PatternClass.h constants.h
+	g++ -g -std=c++98 -Wall -c PatternClass.cpp -o PatternClass.o
 LocationClass.o: LocationClass.cpp LocationClass.h constants.h
 	g++ -g -std=c++98 -Wall -c LocationClass.cpp -o LocationClass.o
 
